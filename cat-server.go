@@ -1,17 +1,17 @@
 package main
 
 import (
-	"net/http"
-	"regexp"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/engine/standard"
 	"github.com/labstack/echo/middleware"
+	"net/http"
+	"regexp"
 )
 
 type Cat struct {
-	Message string `json:"message"`
+	Message  string `json:"message"`
 	Position string `json:"position"`
-	Picture string `json:"picture"`
+	Picture  string `json:"picture"`
 }
 
 func sendResponse(ctx echo.Context) error {
@@ -23,13 +23,13 @@ func sendResponse(ctx echo.Context) error {
 	params := ctx.ParamNames()
 	for _, p := range params {
 		switch p {
-			case "message":
-				cat.Message = ctx.Param(p)
-			case "position":
-				cat.Position = ctx.Param(p)
-			case "picture":
-				cat.Picture = ctx.Param(p)
-			default:
+		case "message":
+			cat.Message = ctx.Param(p)
+		case "position":
+			cat.Position = ctx.Param(p)
+		case "picture":
+			cat.Picture = ctx.Param(p)
+		default:
 		}
 	}
 	return ctx.JSON(http.StatusOK, cat)
