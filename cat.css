@@ -1,0 +1,52 @@
+.caption {
+	font-size: 72px;
+	color: white;
+	position: fixed;
+	font-family: fantasy;
+    text-shadow: #333 2px 2px;
+}
+
+.caption.caption1 {
+	left:5%;
+	bottom: 5%;
+}
+.caption.caption2 {
+	bottom: 5%;
+	width: 100%;
+	text-align: center;
+}
+}
+.caption.caption3 {
+	right:5%;
+	bottom: 5%;
+	text-align: right;
+}
+.caption.caption4 {
+	/*todo*/
+}
+.caption.caption5 {
+	/*todo*/
+}
+.caption.caption6 {
+	/*todo*/
+}
+.caption.caption7 {
+	left: 5%;
+	top: 5%;
+}
+.caption.caption8 {
+	top: 5%;
+	width: 100%;
+	text-align: center;
+}
+.caption.caption9 {
+	right:5%;
+	top: 5%;
+	text-align: right;
+}
+
+.bgstyle {
+	background-size:100% 100%;
+	height:100%;
+	width:100%
+}
